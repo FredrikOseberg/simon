@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+	<title>Simon Game</title>
+</head>
+<body>
+	<div id="viewport">
+		<div class="simon">
+			<div class="yellow tiles" data-target="yellow">
+				<audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+			</div>
+			<div class="blue tiles" data-target="blue">
+				<audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+			</div>
+			<div class="red tiles" data-target="red">
+				<audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+			</div>
+			<div class="green tiles" data-target="green">
+				<audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+			</div>
+			<div class="control-panel">
+				<div class="cp-content">
+					<h1>Simon&reg;</h1>
+					<div class="controls">
+						<div class="count-wrapper">
+							<div class="count">
+								<span class="count-input"></span>
+							</div>
+							<p class="controls-desc count-desc">Steps</p>
+						</div>
+
+						<div class="start-wrapper">
+							<button class="start"></button>
+							<p class="controls-desc">Start</p>
+						</div>
+
+						<div class="strict-wrapper">
+							<button class="strict">
+								<div class="strict-active"></div>
+							</button>
+
+							<p class="controls-desc">Strict</p>
+						</div>
+					</div>
+					
+					<div class="reset">
+						R
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="bundle.js"></script>
+</body>
+</html>
